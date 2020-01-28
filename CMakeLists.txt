@@ -7,6 +7,11 @@ include_directories (include)
 # Targets
 
 # loader_path + executable_path
-add_executable (main src/main.cpp)
-
 add_library (ence SHARED src/ence.cpp)
+
+# 1
+add_executable (one src/one.cpp)
+
+# 2
+add_executable (two src/two.cpp)
+target_link_libraries (two ence)

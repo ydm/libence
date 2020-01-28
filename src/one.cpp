@@ -54,7 +54,7 @@ int main()
     func_t func = ence.sym<func_t>("func");
     if (func)
     {
-        std::printf("%d\n", func(69));
+        std::printf("one: %d\n", func(69));
     }
     return 0;
 }
